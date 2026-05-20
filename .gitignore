@@ -1,0 +1,9 @@
+node_modules/
+.expo/
+android/build/
+android/app/build/
+.dart_tool/
+build/
+*.log
+.env
+.wwebjs_cache/
