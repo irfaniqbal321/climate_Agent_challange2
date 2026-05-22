@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
-import 'theme/app_theme.dart';
-import 'screens/home_screen.dart';
+import 'package:sehat_saathi/screens/city_screen.dart';
+import 'package:sehat_saathi/theme/app_theme.dart';
 
 void main() {
-  runApp(const SehatSaathiApp());
+  runApp(const MyApp());
 }
 
-class SehatSaathiApp extends StatelessWidget {
-  const SehatSaathiApp({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Sehat Saathi',
-      debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: HomeScreen(),
+      home: const CityScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
